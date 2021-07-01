@@ -1,0 +1,2 @@
+# safeman-token
+Safemood fork
