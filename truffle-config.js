@@ -1,5 +1,6 @@
+require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const privateKeys = ['0x + PRIVATE_KEY']; 
+const privateKeys = ['0x'+process.env.PRIVATE_KEY]; 
 /**
  * Use this file to configure your truffle project. It's seeded with some
  * common settings for different networks and features like migrations,
@@ -118,6 +119,6 @@ module.exports = {
      'truffle-plugin-verify'
    ],
   api_keys: {
-    bscscan: 'BSCSCAN API KEY'
+    bscscan: process.env.API_KEY
   }
 };
